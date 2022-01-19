@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body Styling */
+body{
+    background: #81B622;
+    font-family: 'Roboto', sans-serif;
+}
+/* Section Styling */
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+}
+/* Text Block Styling */
+section .contentBx{
+    position: relative;
+    max-width: 600px;
+    z-index: 1000;
+}
+/* H1 Heading Styling */
+section .contentBx h1{
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* Paragraph Text Styling */
+section .contentBx p{
+    font-size: 18px;
+    color: #fff;
+}
+/* AMO Logo Styling */
+section .imgBx img{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+    z-index: 2;
+}
+.amo-logo{
+    width: 290px;
+    height: 90px;
+}
+/* Wave Styling */
+.wave{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+/* Responsive Styling */
+@media (max-width: 991px)
+{
+    section{
+        flex-direction: column;
+        padding-top: 150px;
+        height: auto;
+    }
+    section .contentBx{
+        max-width: 100%;
+    }
+    section .contentBx img{
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px){
+    section{
+        flex-direction: column;
+        padding-top: 150px 50px 100px;
+        height: auto;
+    }
+    section .contentBx h1{
+        font-size: 40px;
+    }
+    section .contentBx p{
+        font-size: 16px;
+    }
+}
